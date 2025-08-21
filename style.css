@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@0;1&family=Barriecito&family=Barrio&family=Bebas+Neue&family=Libertinus+Mono&family=Lobster&family=Meddon&family=Open+Sans:ital,wdth,wght@1,75,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sevillana&display=swap');
 .intro-container {
     display: flex;
     align-items: center;
@@ -13,6 +14,9 @@
     color: var(--branco);
     max-width: 400px;
     text-align: left;
+     font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .mascote {
