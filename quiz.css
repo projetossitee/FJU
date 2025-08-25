@@ -1,0 +1,104 @@
+.cabeçario{
+ display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center;     /* Centraliza verticalmente */
+    background-color: var(--vermelho); /* Fundo vermelho da paleta */
+}
+.logo {
+    width: 150px;
+    max-width: 80%;
+    color: #cc0000;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--branco);
+  color: var(--azul);
+  margin: 0;
+  padding: 0;
+}
+/* Cores base da paleta */
+:root {
+    --azul: #0000FF;
+    --branco: #FFFFFF;
+    --vermelho: #FF0000;
+}
+.quiz-header {
+  text-align: center;
+  background-color: var(--vermelho);
+  color: var(--branco);
+  padding: 20px;
+}
+
+.quiz-container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: var(--branco);
+  border: 2px solid var(--azul);
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  text-align: center;
+}
+
+.options {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.options button {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--azul);
+  color: var(--branco);
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.options button:hover {
+  background-color: #0000cc;
+}
+
+#feedback {
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+.hidden {
+  display: none;
+}
+
+#next-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: var(--vermelho);
+  color: var(--branco);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: var(--azul);
+    color: var(--branco);
+}
+
+/* Responsivo para celular */
+@media (max-width: 600px) {
+    .game-card {
+        padding: 15px;
+    }
+
+    .game-card h2 {
+        font-size: 1.2rem;
+    }
+
+    .game-card p {
+        font-size: 0.9rem;
+    }
+}

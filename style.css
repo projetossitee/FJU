@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@0;1&family=Barriecito&family=Barrio&family=Bebas+Neue&family=Libertinus+Mono&family=Lobster&family=Meddon&family=Open+Sans:ital,wdth,wght@1,75,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sevillana&display=swap');
+.intro-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 15px;
+    flex-wrap: wrap; /* Faz quebrar em tela pequena */
+}
+
+.intro-text {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    color: var(--branco);
+    max-width: 400px;
+    text-align: left;
+     font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.mascote {
+    width: 180px;
+    max-width: 40%;
+}
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Cores base da paleta */
+:root {
+    --azul: #0000FF;
+    --branco: #FFFFFF;
+    --vermelho: #FF0000;
+}
+
+/* Body e cores gerais */
+body {
+    background-color: var(--branco);
+    color: var(--azul);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--azul);
+    color: var(--branco);
+}
+.cabeçario{
+ display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center;     /* Centraliza verticalmente */
+    background-color: var(--vermelho); /* Fundo vermelho da paleta */
+}
+.logo {
+    width: 150px;
+    max-width: 80%;
+    color: #cc0000;
+}
+
+/* Main e cards */
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.games {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    width: 100%;
+}
+
+.game-card {
+    background-color: var(--branco);
+    border: 2px solid var(--azul);
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.game-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.game-card button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: var(--vermelho);
+    color: var(--branco);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.game-card button:hover {
+    background-color: #cc0000;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: var(--azul);
+    color: var(--branco);
+}
+
+/* Responsivo para celular */
+@media (max-width: 600px) {
+    .game-card {
+        padding: 15px;
+    }
+
+    .game-card h2 {
+        font-size: 1.2rem;
+    }
+
+    .game-card p {
+        font-size: 0.9rem;
+    }
+}
