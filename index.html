@@ -1,66 +1,97 @@
-
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FJU Gincanas</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meu Crochê</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- Google Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div class="cabeçario"> 
-    <img src="logo FJU.png" alt="Logo FJU" class="logo">
-    </div>
-   <header>
-    <div class="intro-container">
-        <p class="intro-text">
-            Seja bem-vindo às Gincanas da FJU! 🎉<br>
-            Força Jovem Universal do Parque São José
-            Aqui você encontra jogos divertidos e desafiadores que vão testar seus conhecimentos, sua rapidez e sua criatividade.<br>
-            Chame sua equipe, entre na competição e mostre toda a sua energia! 💪🔥
-        </p>
-        <img src="mascote fju.png" alt="Mascote FJU" class="mascote">
-    </div>
+<header class="header" id="header">
+  <div class="logo">Meu Crochê</div>
+
+  <nav class="menu" id="menu">
+    <a href="#inicio">Início</a>
+    <a href="#sobre">Sobre</a>
+    <a href="#produtos">Produtos</a>
+    <a href="#contato">Contato</a>
+  </nav>
+
+  <div class="menu-mobile" id="menu-toggle">
+    <span class="material-symbols-outlined">menu</span>
+  </div>
 </header>
 
+<section id="inicio" class="hero">
+  <div class="hero-content">
+    <h1>Peças artesanais feitas à mão</h1>
+    <p>Crochê com carinho, qualidade e estilo único</p>
+    <a href="#produtos" class="btn">Ver produtos</a>
+  </div>
+</section>
 
-    <main>
-        <section class="games">
-            <div class="game-card">
-                <h2>Quiz Bíblico</h2>
-                <p>Teste seus conhecimentos sobre a Bíblia!</p>
-                 <a href="quiz biblico.html" ><button>Jogar</button></a>
-            </div>
+<section id="sobre" class="sobre reveal">
+  <div class="container">
+    <img src="https://via.placeholder.com/350" alt="Foto">
 
-            <div class="game-card">
-                <h2>Caça-Palavras</h2>
-                <p>Encontre palavras bíblicas escondidas!</p>
-                <button>Jogar</button>
-            </div>
+    <div class="text">
+      <h2>Sobre mim</h2>
+      <p>
+        Trabalho com crochê artesanal criando peças únicas, feitas à mão com dedicação.
+        Cada produto carrega cuidado, criatividade e amor pelo que faço.
+      </p>
+    </div>
+  </div>
+</section>
 
-            <div class="game-card">
-                <h2>Jogo da Memória</h2>
-                <p>Combine figuras e personagens bíblicos.</p>
-                <button>Jogar</button>
-            </div>
+<section id="produtos" class="produtos">
+  <h2 class="reveal">Produtos</h2>
 
-            <div class="game-card">
-                <h2>Verdadeiro ou Falso</h2>
-                <p>Responda rápido e marque pontos!</p>
-                <button>Jogar</button>
-            </div>
+  <div class="grid">
+    <div class="card reveal">
+      <img src="https://via.placeholder.com/250">
+      <h3>Bolsa</h3>
+      <p>Estilo moderno</p>
+    </div>
 
-            <div class="game-card">
-                <h2>Mímica Virtual</h2>
-                <p>Adivinhe ou represente temas bíblicos.</p>
-                <button>Jogar</button>
-            </div>
-        </section>
-    </main>
+    <div class="card reveal">
+      <img src="https://via.placeholder.com/250">
+      <h3>Tapete</h3>
+      <p>Artesanal</p>
+    </div>
 
-    <footer>
-        <p>&copy; 2025 FJU - Força Jovem Universal</p>
-    </footer>
+    <div class="card reveal">
+      <img src="https://via.placeholder.com/250">
+      <h3>Amigurumi</h3>
+      <p>Personalizado</p>
+    </div>
+  </div>
+</section>
+
+<footer id="contato" class="footer">
+  <h2>Entre em contato</h2>
+
+  <div class="icons">
+    <a href="#"><span class="material-symbols-outlined">shopping_bag</span></a>
+    <a href="#"><span class="material-symbols-outlined">chat</span></a>
+    <a href="#"><span class="material-symbols-outlined">mail</span></a>
+    <a href="#"><span class="material-symbols-outlined">photo_camera</span></a>
+  </div>
+</footer>
+
+<!-- Botão WhatsApp -->
+<a href="#" class="whatsapp">
+  <span class="material-symbols-outlined">chat</span>
+</a>
+
+<script src="script.js"></script>
 </body>
 </html>
